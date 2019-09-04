@@ -1,0 +1,46 @@
+~$ ls
+Desktop    Downloads         Music     Public     Videos
+Documents  examples.desktop  Pictures  Templates
+
+~$ ls -a
+.              .config           .gnupg         Public
+..             Desktop           .ICEauthority  .sudo_as_admin_successful
+.bash_history  .dmrc             .local         Templates
+.bash_logout   Documents         .mozilla       Videos
+.bashrc        Downloads         Music          .Xauthority
+.cache         examples.desktop  Pictures       .xsession-errors
+.compiz        .gconf            .profile       .xsession-errors.old
+
+~$ history
+    1  sudo setpci -s 00:02.0 F4.B=8
+    2  sudo setpci -s 00:02.0 F3.B=6
+    3  sudo setpci -s 00:02.0 F2.B=2
+    4  sudo setpci -s 00:02.0 F4.B=11
+    5  sudo aad-apt-repository ppa:indicator-brightness/ppa
+    6  sudo add-apt-repository ppa:indicator-brightness/ppa
+    7  sudo apt-get update && apt-get install indicator-brightness
+    8  y
+    9  sudo setpci -s 00:00.0 F4.B=25
+
+~$ clear
+
+~$ mkdir mydirectory
+mkdir: cannot create directory ‘mydirectory’: File exists
+~$ ls
+Desktop    Downloads         Music        proc           Templates
+directory  examples.desktop  mydirectory  procdirectory  Videos
+Documents  music             Pictures     Public         Vifeos
+
+~$ mkdir /tmp/MUSIC
+mkdir: cannot create directory ‘/tmp/MUSIC’: File exists
+~$ ls
+Desktop    Downloads         Music        proc           Templates
+directory  examples.desktop  mydirectory  procdirectory  Videos
+Documents  music             Pictures     Public         Vifeos
+
+~$ rmdir mydirectory
+~$ ls
+Desktop    Downloads         Music     procdirectory  Videos
+directory  examples.desktop  Pictures  Public         Vifeos
+Documents  music             proc      Templates
+

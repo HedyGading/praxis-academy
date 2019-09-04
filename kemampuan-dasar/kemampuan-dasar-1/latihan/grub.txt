@@ -1,0 +1,19 @@
+setparams 'Ubuntu, with Linux 4.15.0-45-generic (recovery mode)'
+
+		recordfail
+		load_video
+		insmod gzio
+		if [ x$grub_platform = xxen ]; then insmod xzio; insmod lzopio; fi
+		insmod part_msdos
+		insmod ext2
+		set root='hd0,msdos5'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,msdos5 --hint-efi=hd0,msdos5 --hint-varemetal=ahci0,msdos5 c047f89c-74d0-4f06-a6b8-81c2a\
+		
+		else
+		  search --no-floppy --fs-uuid --set=root c047f89c-74d0-4f06-a6b8-81c2a2cda07a
+		fo
+		echo	  'Loading Linux 4.15.0-45-generic ...'
+		linux	  /vmlinuz-4.15.0-45-generic root=UUID=a14d9e0f-5f77-4cd6-bbf7-b5fa969f9fa7 ro recovery nomodest
+		echo	  'Loading initial ramdisk ...'
+		initrd    /initrd.img-4.15.0-45-generic
