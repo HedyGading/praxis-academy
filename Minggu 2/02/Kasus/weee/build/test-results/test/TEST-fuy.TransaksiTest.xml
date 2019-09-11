@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fuy.TransaksiTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-09-10T08:49:15" hostname="Hedy" time="0.038">
+  <properties/>
+  <testcase name="testSetBarang" classname="fuy.TransaksiTest" time="0.028"/>
+  <testcase name="testSetTransaksi" classname="fuy.TransaksiTest" time="0.001"/>
+  <testcase name="testCetakStruk" classname="fuy.TransaksiTest" time="0.007"/>
+  <testcase name="testTotalTransaksi" classname="fuy.TransaksiTest" time="0.0"/>
+  <system-out><![CDATA[setBarang
+setTransaksi
+cetakStruk
+
+
+=============================================================
+                          Nota Pembelian                     
+=============================================================
+ID Pembeli                  : 0
+Nama Pembeli                : null
+Alamat                      : null
+Kode Barang                 : 0
+Nama Barang                 : null
+Harga                       : 0.0
+Kode transaksi              : 0
+Banyak                      : 0
+Total Transaksi             : Rp. 0.0
+=============================================================
+                          Terima kasih                       
+=============================================================
+totalTransaksi
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
