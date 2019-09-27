@@ -1,0 +1,21 @@
+setBarang
+setTransaksi
+cetakStruk
+
+
+?=============================================================
+?                          Nota Pembelian                     
+?=============================================================
+!ID Pembeli                  : 0
+$Nama Pembeli                : null
+$Alamat                      : null
+!Kode Barang                 : 0
+$Nama Barang                 : null
+#Harga                       : 0.0
+!Kode transaksi              : 0
+!Banyak                      : 0
+'Total Transaksi             : Rp. 0.0
+?=============================================================
+?                          Terima kasih                       
+?=============================================================
+totalTransaksi
