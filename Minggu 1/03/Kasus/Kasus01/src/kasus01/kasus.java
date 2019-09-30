@@ -1,6 +1,6 @@
 package kasus01;
 import java.util.Scanner;
-public class Kasus03_01 {
+public class kasus {
     public static void main(String[] args) {
         /*
         *inisialisasi variabel
